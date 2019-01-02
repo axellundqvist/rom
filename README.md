@@ -5,7 +5,7 @@ interface for admins to work with the CRUD operations.
 HTML, CSS, JavaScript, AJAX.
 
 ## Frontend_public
-Public webapp which uses Vue.js to GET data.
+Public web app which uses Vue.js to GET data.
 HTML, SASS, Vue.js
 
 ## Projekt_v2_server
