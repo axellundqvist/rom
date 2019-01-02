@@ -62,3 +62,26 @@ function addDrink() {
         loadDrinks();
     });
 }
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = "Tid innan servern blir idle: " + minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            display.textContent = "Uppdatera webbläsaren";
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiftyfive = 55,
+        display = document.querySelector('#time');
+    startTimer(fiftyfive, display);
+};
