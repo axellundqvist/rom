@@ -46,6 +46,9 @@
         <div class="col-6">
         <div class="firstbox">
     <h2>Lägg till dryck</h2>
+            <div id="time">
+    </div><!--time-->
+    <br>
     <form>
         
         <input type="text" id="brand" name="brand" placeholder="Märke" required>
@@ -65,11 +68,11 @@
         <textarea id="comment" name="comment" placeholder="Kommentar"></textarea>
         <!--<input type="text" name="comment"><br><br>-->
 
-        <!--<input type="submit" value="Lägg till" class="knapp" />-->
+        <button onclick="addDrink()" class="knapp" id="addera">Lägg till</button>
         <input type="reset" value="Rensa" class="knapp avbryt" />
     
     </form>
-    <button onclick="addDrink()" class="knapp" id="addera">Lägg till</button>
+    
     <br>
 
     </div> <!-- End of firstbox -->
