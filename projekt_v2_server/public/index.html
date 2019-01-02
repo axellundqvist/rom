@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <title>webbtjänst</title>
+</head>
+<body>
+    <div class="brown">
+        <div class="container">
+            <div class="firstbox">
+                <h1>Rombasen.</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="updatebox">
+            <div class="row">
+                <div class="col-12">
+                    <div id="singledrink">
+                            <script src="js/find.js"></script>
+                    </div> <!--singledrink-->
+                </div> <!--col-12-->
+            </div> <!--row 2-->
+        </div> <!--updatebox-->
+
+
+    
+        <div class="row">
+        <div class="col-6">
+        <div class="firstbox">
+    <h2>Lägg till dryck</h2>
+    <form method="post" action="http://localhost:3000/drinks/add">
+        
+        <input type="text" name="brand" placeholder="Märke" required>
+
+        <input type="text" name="model" placeholder="Modell">
+
+        <input type="text" name="country" placeholder="Land">
+
+        <input type="text" name="number" placeholder="Nummer">
+
+        <input type="text" name="alkohol" placeholder="Alkohol i %">
+
+        <input type="text" name="volume" placeholder="Volym">
+        
+        <input type="text" name="price" placeholder="Pris i kr">
+
+        <textarea name="comment" placeholder="Kommentar"></textarea>
+        <!--<input type="text" name="comment"><br><br>-->
+
+        <input type="submit" value="Lägg till" class="knapp" />
+        <input type="reset" value="Rensa" class="knapp avbryt" />
+    
+    </form>
+    <br>
+
+    </div> <!-- End of firstbox -->
+</div><!--col-6-->
+<div class="col-6">
+
+    <div class="firstbox">
+        <h2>Alla drycker</h2>
+        <ul id="drinklista">
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="js/main.js"></script>
+        </ul>
+    
+        </div> <!-- End of firstbox -->
+    </div><!--col-6-->
+    </div><!--Row-->
+
+    
+    </div> <!-- End of container -->
+</body>
+</html>

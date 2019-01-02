@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <title>SRS - Rombasen</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="top">
+            <h1>SRS - Rombasen</h1>
+            <h2>Eller vad drack vi egentligen</h2>
+        </div> <!--top-->
+
+        <!-- <div id="app">
+        <div class="list" v-for="drinks in rom">
+            <button v-on:click="drinks.visible = !drinks.visible" class="btn">{{ drinks.brand }}, {{ drinks.model }}</button>
+            <transition name="fade">
+            <div class="hidden" v-show="!drinks.visible">
+                <p id="more">
+                <p id="bold">Nummer:</p> <p id="more">{{ drinks.number }}</p> <br>
+                <p id="bold">Land:</p> <p id="more">{{ drinks.country }}</p> <br>
+                <p id="bold">Alkoholhalt:</p> <p id="more">{{ drinks.alkohol }}</p> <br>
+                <p id="bold">Volym:</p> <p id="more">{{ drinks.volume }}</p> <br>
+                <p id="bold">Pris:</p> <p id="more">{{ drinks.price }} kr <br><br>  
+                {{ drinks.comment }}</p>
+            </div>
+            </transition>
+        </div>
+        </div>app -->
+
+
+        <div id="app">
+            <div class="list">
+                    <input type="text" v-model="search" class="search" placeholder="Sök...">
+                <div v-for="drinks in filteredRoms">
+                        <button v-on:click="drinks.visible = !drinks.visible" class="btn">{{ drinks.brand }}, {{ drinks.model }}</button>
+                        <transition name="fade">
+                        <div class="hidden" v-show="!drinks.visible">
+                            <p class="more">
+                            <p class="bold">Nummer:</p> <p class="more">{{ drinks.number }}</p> <br>
+                            <p class="bold">Land:</p> <p class="more">{{ drinks.country }}</p> <br>
+                            <p class="bold">Alkoholhalt:</p> <p class="more">{{ drinks.alkohol }}</p> <br>
+                            <p class="bold">Volym:</p> <p class="more">{{ drinks.volume }}</p> <br>
+                            <p class="bold">Pris:</p> <p class="more">{{ drinks.price }} kr <br><br>  
+                            {{ drinks.comment }}</p>
+                        </div><!--hidden-->
+                        </transition>
+                </div>
+                
+            </div><!--list-->
+        </div><!--app-->
+
+    </div> <!--Container-->
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

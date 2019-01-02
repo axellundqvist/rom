@@ -1,0 +1,140 @@
+$orange: rgb(221, 151, 94);
+$white: #F8F6F2;
+$grey: rgb(94, 104, 113);
+$darkgrey: rgb(93, 93, 93);
+$lightgrey: rgb(117, 117, 117);
+$blue: #355C7D;
+$creme: #F0E6DE;
+$green: #489577;
+
+
+$rale: 'Raleway', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+
+
+
+
+
+
+body {
+    background-color: rgb(252, 252, 252);
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+p, h2, li, a {
+    font-family: $roboto;
+    color: $grey;
+    font-weight: bold;
+}
+
+
+h1 {
+    font-size: 1.5rem;
+    font-family: $rale;
+    font-weight: bold;
+    color: $grey;
+    margin: 20px 0 10px 0;
+}
+
+.top {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 60px;
+}
+.top h2 {
+    color: $orange;
+}
+.list {
+    padding: 5px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 40px;
+}
+.list p {
+    display: inline;
+}
+
+.btn {
+    width: 100%;
+    text-align: left;
+    background-color: rgb(252, 252, 252);
+    border: none;
+    border-top: 2px solid darken(white, 5%);
+    padding-top: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 0px;
+    font-weight: bold;
+    color: $darkgrey;
+}
+.btn:hover {
+    color: $orange;
+}
+button:focus {
+    outline: none;
+}
+.hidden {
+    padding: 20px;
+    max-width: 550px;
+    line-height: 25px;
+}
+.more {
+    font-size: 1rem;
+    color: $lightgrey;
+    font-weight: normal
+}
+.bold {
+    font-size: 1rem;
+    color: $orange;
+    font-weight: bold;
+}
+
+.search {
+    border-radius: none;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid $creme;
+}
+.search:focus {
+    outline-color: $orange;
+}
+.search::placeholder {
+    font-weight: bold;
+    color: $orange;
+    font-family: $roboto;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .btn {
+        font-size: 0.8rem;
+    }
+    .search {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .top {
+        margin-bottom: 30px;
+    }
+    .bold {
+        font-size: 0.8rem;
+    }
+    .more {
+        font-size: 0.8rem;
+    }
+}

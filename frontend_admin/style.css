@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0;padding:0
+}
+section {
+    margin:55px 25px;
+}
+article {
+    padding:15px 0 25px 0;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+     float: left;
+      padding:15px;
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  body {
+    background-color: rgb(252, 252, 252);/* rgb(253, 238, 238);*/
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+p, h1, h2, label, li {
+    color: rgb(117, 117, 117);
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 33px;
+    word-break: break-all;
+}
+h2 {
+    font-size: 2rem;
+    margin: 0 0 60px 0;
+}
+.title {
+    height: 50px;
+    background-color: rgb(246, 246, 246);
+    font-weight: bold;
+}
+.title p {
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 8px;
+}
+li {
+    font-size: 1rem;
+    margin: 20px 0 20px 0;
+    height: 40px;
+    line-height: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+label {
+    font-size: 1.5rem;
+    margin: 20px 0 40px 0;
+}
+input::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #9DA2AD;
+    font-size: 1rem;
+}
+textarea::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #9DA2AD;
+    font-size: 1rem;
+}
+input[type=submit], input[type=reset]{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+}
+input[type=text] {
+    height: 40px;
+    padding: 25px;
+    width: 100%;
+    margin: 0 0 5px 0;
+    border: 1px solid rgb(231, 231, 231);
+}
+textarea {
+    height: 80px;
+    padding: 25px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 1px solid rgb(231, 231, 231);
+}
+.knapp {
+    width: 100px;
+    height: 40px;
+    border-radius: 1px;
+    border: 1px solid white;
+    background-color: rgb(137, 199, 131);
+    cursor: pointer;
+}
+.avbryt {
+    background-color: rgb(238, 229, 109);
+}
+.knapp:hover {
+    border: 1px solid rgb(137, 199, 131);
+    transition: border 0.2s ease-in-out;
+}
+.firstbox {
+    padding: 40px;
+}
+
+#delknapp {
+    float: right;
+    cursor: pointer;
+}
+.brown {
+    height: 200px;
+    background-color: #E7E6E1;
+}
+
+
+
+.drink {
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E7E6E1;
+    line-height: 6px;
+}
+.drink h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 1rem;
+}
+.drink p {
+    font-weight: normal;
+}
+.spannen {
+    float: right;
+}
+.spannen i {
+    color: rgb(117, 117, 117);
+    cursor: pointer;
+}
+#pen {
+    margin-right: 10px;
+}
+.spannen i:hover {
+    color: rgb(155, 155, 155);
+}
+
+#singledrink {
+    padding: 40px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .col-5 { width: 100%; }
+    .col-7 { width: 100%; }
+    .col-6 { width: 100%; }
+    .col-8 { width: 100%; }
+    .col-4 { width: 100%; }
+
+    .firstbox {
+        padding: 20px;
+    }
+    .drink h2 {
+        font-size: 0.9rem;
+    }
+    #delknapp img {
+        width: 20px;
+    }
+}
