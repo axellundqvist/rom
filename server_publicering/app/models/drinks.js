@@ -6,10 +6,10 @@ var drinksSchema =  new Schema ( {
     brand: String,
     model: String,
     country: String,
-    number: Number,
+    number: String,
     alkohol: String,
     volume: String,
-    price: Number,
+    price: String,
     comment: String
 });
 
